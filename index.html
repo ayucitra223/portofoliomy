@@ -828,7 +828,6 @@
             transform: translateY(-5px);
         }
 
-        
         /* === LOADING ANIMATION === */
         .loader {
             position: fixed;
@@ -934,13 +933,9 @@
             </div>
             <div class="about-content">
                 <div class="about-image animate">
-                    <div style="width:100%; height:300px; border-radius: 20px; overflow:hidden;">
-                        <img src="img/foto-ayu.jpeg" 
-                             alt="Foto About" 
-                             style="width:100%; height:100%; object-fit:cover;">
+                    <div style="width:100%; height:300px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); border-radius: 20px; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">
+                        <i class="fas fa-camera"></i>
                     </div>
-                </div>
-            </div>
                 </div>
                 <div class="about-text animate delay-1">
                     <h3>Web Developer & Creative Designer</h3>
@@ -962,7 +957,7 @@
                         </div>
                     </div>
                     
-                    <a href="cv-ayu.pdf.pdf" class="btn" style="margin-top: 1.5rem;">Download CV <i class="fas fa-download"></i></a>
+                    <a href="cv-ayu.pdf" class="btn" style="margin-top: 1.5rem;">Download CV <i class="fas fa-download"></i></a>
                 </div>
             </div>
         </div>
@@ -1041,8 +1036,8 @@
                 <div class="project-card animate delay-1">
                     <div class="project-img"><i class="fas fa-utensils"></i></div>
                     <div class="project-content">
-                        <h4>Memasak berbagai Jenis Makanan</h4>
-                        <p>Memasak berbagai jenis makanan dan jajanan, seperti brownies,ayam daun jeruk,bolu pandan,dan masakan lainnya.</p>
+                        <h4>Aplikasi Laundry</h4>
+                        <p>Aplikasi pemesanan Laundry yang bisa memudahkan pelanggan untuk memesan dirumah,.</p>
                         <div class="project-tags">
                             <span>Vue.js</span>
                             <span>Firebase</span>
@@ -1057,8 +1052,8 @@
                 <div class="project-card animate delay-2">
                     <div class="project-img"><i class="fas fa-book"></i></div>
                     <div class="project-content">
-                        <h4>Aplikasi Laundry</h4>
-                        <p>Membuat Aplikasi sederhana pemesanan laundry yang memudahkan pemesanan client.</p>
+                        <h4>E-Learning Platform</h4>
+                        <p>Platform belajar online dengan video course, quiz, dan sertifikat digital.</p>
                         <div class="project-tags">
                             <span>Next.js</span>
                             <span>Stripe</span>
@@ -1110,7 +1105,7 @@
                         <div class="contact-icon"><i class="fab fa-instagram"></i></div>
                         <div class="contact-text">
                             <h4>Instagram</h4>
-                            <a href="https://instagram.com/ayucitra">@ctrarmd</a>
+                            <a href="https://instagram.com/ayucitra">@ayucitra</a>
                         </div>
                     </div>
                 </div>
@@ -1275,7 +1270,7 @@
                 return;
             }
             
-            alert(✨ Terima kasih, ${name}! Pesan Anda telah terkirim. Saya akan segera menghubungi Anda.);
+            alert(`✨ Terima kasih, ${name}! Pesan Anda telah terkirim. Saya akan segera menghubungi Anda.`);
             contactForm.reset();
         });
 
